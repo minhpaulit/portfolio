@@ -11,6 +11,7 @@
     "url": "https://github.com/minhpaulit"
   },
   "scripts": {
+    "preinstall": "SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install --arch=x64 --platform=linux --libc=glibc sharp",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
