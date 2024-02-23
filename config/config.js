@@ -1,7 +1,7 @@
 
 import profile from './profile.png';
-import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { } from '@fortawesome/free-solid-svg-icons';
+import { faAppStore, faGithub, faGooglePlay, faFacebook, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
 	name: "Minh",
@@ -23,6 +23,7 @@ export const navigation = {
 export const intro = {
 	title: "Hi, I Am Minh",
 	description: "Machine Learning Engineer",
+	subdescription: "Love Data, Love Coding",
 	image: profile.src,
 	buttons: [
 		{
@@ -44,7 +45,7 @@ export const about = {
 	buttons: [
 		{
 			title: "Resume",
-			link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+			link: "https://docs.google.com/document/d/1d_75xwyj7JG-rQQoZfxwB7BeJGcgulFP5SdsWmPW1hk/edit?usp=sharing",
 			isPrimary: false,
 		},
 	],
@@ -70,18 +71,32 @@ export const about = {
 }
 
 export const work = {
-	title: "What I do",
-	cards: [
+	title: "Work Experience",
+	experience: [
 		{
-			title: "Mobile App Development",
-			description: "I create pixel perfect iOS and Andriod apps using Flutter.",
-			icons: null,
+			title: "Machi Learning Engineer",
+			company: "Dai-ichi Life",
+			period: "02/2023 - 07/2023",
+			description: [
+				"Maintained and constructed a data pipeline to synthesize large data from numerous sources and optimized SQL queries to improve the performance by 20%. Built a dashboard to monitor insurance contract statistics using Python, SQL, Hadoop, Hive, Spark, and Superset.",
+				"Enhanced processing pipeline of ID OCR (Optical character recognition) system, cutting processing time by 50% from 1 second to 0.5 seconds, increasing accuracy from 97% to 99%. using MaskRCNN, Transformer based OCR, RabbitMQ, and Fast API.",
+				"Developed AI models for mobile devices (Android & IOS), collaborating with the mobile team for seamless integration, improving customer satisfaction and cutting down on wait times by 30% using TF-Lite, Pytorch Mobile, Scikit-learn, Java, Swift, C++.",
+				"Assisted team leader in implementing and evaluating AI applicability in the insurance industry. Topics: chatbot, chatGPT, LLMs, crowd counting, voice recognition, and speaker diarization."
+		]
 		},
 		{
-			title: "Web Development",
-			description: "I create responsive static websites using Reactjs.",
-			icons: null,
-		}
+			title: "Machi Learning Engineer, Team Leader",
+			company: "GMO-Z.com RUNSYSTEM",
+			period: "01/2022 - 12/2022",
+			description: [
+				"Led the design and development of multiple enterprise-level microservice applications such as SmartOCR, SmartKYC, driving over $2 million of revenue every year using the latest technologies of AWS, DBNet++, YOLOs, Transformers, BERTs,++, GANs.",
+				"Continuous Integration/Deployment Pipeline Integration using Gitlab and Jenkins, Automated Unit/stress and A/B testing, deployment, rollback on both staging and production environments. Reduced deployment time by 50%.",
+				"Reported directly to CTO: providing updates, strategic insights, and innovative solutions on critical technological advancements.",
+				"Clarifying objectives and accomplishments, prioritizing tasks based on urgency and importance, and impact. Monitoring task planning.",
+				"Optimized workflows and processes, exchanged feedback and evaluated work results, and provided support and guidance to junior staff.",
+				"Recognized for great mentorship with the ‘Excellent Mentor of the Month’ award."
+		]
+		},
 	],
 }
 
@@ -89,13 +104,9 @@ export const projects = {
 	title: "Projects",
 	cards: [
 		{
-			title: "StarBook",
-			description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
+			title: "Candlestick-Patterns-Scan",
+			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet consequat leo in iaculis. Aliquam tincidunt fringilla nibh, in suscipit lectus commodo ut. Nunc condimentum arcu a odio sodales pulvinar. Suspendisse fermentum dolor id neque pretium, at iaculis purus lacinia. Donec pretium neque sed libero sagittis sagittis.",
 			icons: [
-				{
-					icon: faAppStore,
-					link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-				},
 				{
 					icon: faGithub,
 					link: "https://github.com/minhpaulit",
@@ -103,16 +114,16 @@ export const projects = {
 			]
 		},
 		{
-			title: "QuranTalk",
-			description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
+			title: "orderTakingApp",
+			description: "Integer accumsan eget massa et mattis. Donec nec quam quis augue efficitur aliquet. Maecenas id elit non purus pulvinar varius. Nam in lorem ac nibh volutpat efficitur vitae eget arcu. Praesent eu libero non purus facilisis tincidunt in sit amet justo. Maecenas eu eros nulla. Vestibulum tincidunt justo nec libero pellentesque dignissim.",
 			icons: [
 				{
 					icon: faAppStore,
 					link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
 				},
 				{
-					icon: faGooglePlay,
-					link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
+					icon: faGithub,
+					link: "https://github.com/minhpaulit",
 				},
 			]
 		},
@@ -133,10 +144,36 @@ export const contact = {
 	title: "Get in touch",
 	description: "",
 	buttons: [
+		
 		{
-			title: "Email Me",
-			link: "minhpaulit@gmail.com",
+			title: "+1 (506) 471 6047",
+			link: false,
 			isPrimary: true,
+			icon: faPhone
+		},
+		{
+			title: "Fredericton, NB",
+			link: false,
+			isPrimary: true,
+			icon: faLocationDot
+		},
+		{
+			title: false,
+			link: "https://www.linkedin.com/in/minhvdh/",
+			isPrimary: false,
+			icon: faLinkedin
+		},
+		{
+			title: false,
+			link: "https://github.com/minhpaulit",
+			isPrimary: false,
+			icon: faGithub
+		},
+		{
+			title: false,
+			link: "https://www.facebook.com/VDHMinh",
+			isPrimary: false,
+			icon: faFacebook
 		}
 	]
 }

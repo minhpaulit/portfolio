@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const Contact = ({ title, description, buttons }) => {
 	return (
@@ -9,21 +11,33 @@ export const Contact = ({ title, description, buttons }) => {
 				<div className="px-sm-5">
 					<p>{description}</p>
 					<div className="">
+					<div className="d-flex my-1 fs-4">
+						<div><FontAwesomeIcon icon={faEnvelope}/> :</div>
+						<div>
+							<Link href="mailto:minhpaulit@gmail.com">
+								<a className="mx-3">minhpaulit@gmail.com</a>
+							</Link>
+						</div>
+					</div>
 						{buttons.map((value, index) => (
 							(value.isPrimary) ?
-								<Link key={index} href={value.link}>
-									<a className="btn btn-primary my-1 mx-3">
-										{value.title}
-									</a>
-								</Link>
+								<a key={index} className="d-flex my-1 fs-4">
+									<div>
+										<FontAwesomeIcon icon={value.icon}/> :
+									</div>
+									<div className="mx-3">{value.title}</div>
+								
+								</a>
 								:
 								<Link key={index} href={value.link}>
-									<a className="btn btn-outline-primary my-1 mx-3">
-										{value.title}
+									<a target="_blank" rel="noreferrer">
+										<FontAwesomeIcon className="me-4 my-3 display-5" icon={value.icon}/>
 									</a>
 								</Link>
+								
 						))}
 					</div>
+					
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Nav } from '../components/Navbar';
 import { Intro, About, WavesBackground } from '../components/Intro';
-import { Skills, Projects } from '../components/Work';
+import { Work, Projects } from '../components/Work';
 import { Footer, Contact } from '../components/Footer';
 import { about, contact, intro, navigation, projects, SEO, work } from '../config/config';
 import { Header } from '../components/Header';
@@ -18,6 +18,7 @@ export default function Home() {
         <Intro
           title={intro.title}
           description={intro.description}
+          subdescription={intro.subdescription}
           image={intro.image}
           buttons={intro.buttons}
         />
@@ -30,9 +31,9 @@ export default function Home() {
         buttons={about.buttons}
         skills={about.skills}
       />
-      <Skills
+      <Work
         title={work.title}
-        cards={work.cards}
+        experience={work.experience}
       />
       <Projects
         title={projects.title}
