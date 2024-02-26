@@ -45,15 +45,27 @@ export const Projects = ({ title, cards }) => {
 		<div id="projects" className="bg-primary py-5 px-5">
 			<div className="container">
 				<h1 className="text-light fw-bold">{title}</h1>
-				<div className="d-flex flex-row flex-wrap justify-content-center">
-					{cards.map((value, index) => (
-						<Card
-							key={index}
-							title={value.title}
-							description={value.description}
-							icons={value.icons} />
-					))}
+
+				<div class="blur-background">
+
+					<div className="d-flex flex-row flex-wrap justify-content-center">
+							{cards.map((value, index) => (
+								<Card
+									key={index}
+									title={value.title}
+									description={value.description}
+									icons={value.icons} />
+							))}
+					</div>
+
+					<div className="blur-overlay d-flex justify-content-center align-items-center">
+						<p className='text-center text-warning fw-bold display-3'> Being Updated! </p>
+					</div>
 				</div>
+				
+
+
+				
 			</div>
 		</div>
 	);

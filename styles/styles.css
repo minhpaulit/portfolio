@@ -1,15 +1,22 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
-.scrollable-div {
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap;
+.blur-background {
+  position: relative;
+  z-index: 1;
 }
 
-.card-text {
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide any overflowing text */
-  text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  z-index: 2; /* Overlay must be above the content */
 }
+
+
 
 .header-gradient {
   font-family: 'Lato', sans-serif;

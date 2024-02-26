@@ -131,7 +131,7 @@ export const projects = {
 			icons: [
 				{
 					icon: faAppStore,
-					link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
+					link: "",
 				},
 				{
 					icon: faGithub,
@@ -155,8 +155,9 @@ export const projects = {
 export const contact = {
 	title: "Contact",
 	description: [
-		"Interested in collaborating or discussing how data can drive your business forward?",
-		"I'd love to hear from you!"
+		// "Interested in collaborating or discussing how data can drive your business forward?",
+		"I'd love to hear from you!",
+		// "Hire me!"
 	],
 	image: road.src,
 	buttons: [
