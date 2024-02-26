@@ -43,6 +43,7 @@ export default function Home() {
         title={contact.title}
         description={contact.description}
         buttons={contact.buttons}
+        image={contact.image}
       />
       <Footer />
     </Fragment>

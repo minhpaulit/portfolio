@@ -1,7 +1,9 @@
 
 import profile from './profile.png';
-import { faAppStore, faGithub, faGooglePlay, faFacebook, faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import road from './road.png';
+
+import { faAppStore, faGithub, faFacebook, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeOpen, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
 	name: "Minh",
@@ -22,8 +24,8 @@ export const navigation = {
 }
 export const intro = {
 	title: "Hi, I Am Minh",
-	description: "Machine Learning Engineer",
-	subdescription: "Love Data, Love Coding",
+	description: "Data Scientist",
+	subdescription: "Passionate about Data, Tech and Life",
 	image: profile.src,
 	buttons: [
 		{
@@ -37,10 +39,10 @@ export const intro = {
 export const about = {
 	title: "Who I am",
 	description: [
-		"I am a friendly and sociable individual who loves sports. I find myself strong in logical and analytical abilities,\
-		possessing a positive attitude, eager to learn and innovate at work. I am confident in the experiences I have\
-		gained in problem-solving, both independently as well as team work. I always strive to achieve my goal of\
-		becoming an expert in the field of AI/ML and aspire to take on a leadership role in AI research."
+		"As a Data Scientist, I believe in the power of data storytelling to create impactful, I passionate about leveraging data and technology to uncover patterns and trends that reveal business insights.",
+		"With a love for coding and a thirst for learning. Skilled in a range of machine learning techniques and technologies, I have a demonstrated ability to deliver impactful solutions.",
+		"Let's connect and explore how we can collaborate to harness the power of data for positive change."
+		
 	],
 	buttons: [
 		{
@@ -74,14 +76,15 @@ export const work = {
 	title: "Work Experience",
 	experience: [
 		{
-			title: "Machi Learning Engineer",
+			title: "Data Scientist",
 			company: "Dai-ichi Life",
 			period: "02/2023 - 07/2023",
 			description: [
-				"Maintained and constructed a data pipeline to synthesize large data from numerous sources and optimized SQL queries to improve the performance by 20%. Built a dashboard to monitor insurance contract statistics using Python, SQL, Hadoop, Hive, Spark, and Superset.",
-				"Enhanced processing pipeline of ID OCR (Optical character recognition) system, cutting processing time by 50% from 1 second to 0.5 seconds, increasing accuracy from 97% to 99%. using MaskRCNN, Transformer based OCR, RabbitMQ, and Fast API.",
-				"Developed AI models for mobile devices (Android & IOS), collaborating with the mobile team for seamless integration, improving customer satisfaction and cutting down on wait times by 30% using TF-Lite, Pytorch Mobile, Scikit-learn, Java, Swift, C++.",
-				"Assisted team leader in implementing and evaluating AI applicability in the insurance industry. Topics: chatbot, chatGPT, LLMs, crowd counting, voice recognition, and speaker diarization."
+				"Maintained and developed a data pipeline to extract, transform, and load various amounts of data from various sources into the data lake. Optimized SQL queries to improve the performance by 20%.",
+				"Ingested, transformed, stored clean data for analytics in the data warehouse, Built dashboards to visualize insurance contract statistics.",
+				"Performed feature engineering to select the important features. Implemented, trained, and fine-tuned models.",
+				"Developed deep learning models for mobile devices (Android and IOS), collaborating with the mobile team for seamless integration and improving customer satisfaction and cutting down on wait times by 30%.",
+				"Assisted team leader in implementing and evaluating AI applicability in the insurance industry. Topics: chatbots, chatGPT, LLMs."
 		]
 		},
 		{
@@ -89,13 +92,22 @@ export const work = {
 			company: "GMO-Z.com RUNSYSTEM",
 			period: "01/2022 - 12/2022",
 			description: [
-				"Led the design and development of multiple enterprise-level microservice applications such as SmartOCR, SmartKYC, driving over $2 million of revenue every year using the latest technologies of AWS, DBNet++, YOLOs, Transformers, BERTs,++, GANs.",
-				"Continuous Integration/Deployment Pipeline Integration using Gitlab and Jenkins, Automated Unit/stress and A/B testing, deployment, rollback on both staging and production environments. Reduced deployment time by 50%.",
+				"Led the design and development of enterprise-level microservice applications such as SmartOCR and SmartKYC, driving over $2 million of revenue every year using the latest technologies.",
+				"Continuous Integration/Deployment Pipeline Integration using Gitlab and Jenkins, Automated testing (unit, load, A/B), deployment, rollback on staging and production environments. Reduced deployment time by 50%.",
 				"Reported directly to CTO: providing updates, strategic insights, and innovative solutions on critical technological advancements.",
-				"Clarifying objectives and accomplishments, prioritizing tasks based on urgency and importance, and impact. Monitoring task planning.",
-				"Optimized workflows and processes, exchanged feedback and evaluated work results, and provided support and guidance to junior staff.",
-				"Recognized for great mentorship with the ‘Excellent Mentor of the Month’ award."
-		]
+				"Optimize the Agile methodologies. Clarifying objectives. Prioritizing tasks based on urgency and importance. Monitoring task planning."
+			]
+		},
+		{
+			title: "Machi Learning Engineer",
+			company: "GMO-Z.com RUNSYSTEM",
+			period: "11/2018 - 12/2021",
+			description: [
+				"Design and development of several AI products, from identifying system requirements and partner dependencies to software implementation, defining databases, API interfaces, and documentation. Delivering significant profits for the company.",
+				"Analyzed, cleaned, and transformed big data to enhance training data, which contributed to increasing accuracy by 20%.",
+				"Designed and implemented scalable and secure APIs with load balancing, A/B testing, and error handling. Utilized scripting to automate the deployment and management of machine learning models, supporting troubleshooting Linux problems.",
+				"Deployed services on cloud platforms using AWS, leveraging services such as EC2, S3, and Lambda"
+			]
 		},
 	],
 }
@@ -114,7 +126,7 @@ export const projects = {
 			]
 		},
 		{
-			title: "orderTakingApp",
+			title: "Order-Taking-App-IOS",
 			description: "Integer accumsan eget massa et mattis. Donec nec quam quis augue efficitur aliquet. Maecenas id elit non purus pulvinar varius. Nam in lorem ac nibh volutpat efficitur vitae eget arcu. Praesent eu libero non purus facilisis tincidunt in sit amet justo. Maecenas eu eros nulla. Vestibulum tincidunt justo nec libero pellentesque dignissim.",
 			icons: [
 				{
@@ -141,10 +153,19 @@ export const projects = {
 }
 
 export const contact = {
-	title: "Get in touch",
-	description: "",
+	title: "Contact",
+	description: [
+		"Interested in collaborating or discussing how data can drive your business forward?",
+		"I'd love to hear from you!"
+	],
+	image: road.src,
 	buttons: [
-		
+		{
+			title: "minhpaulit@gmail.com",
+			link: false,
+			isPrimary: true,
+			icon: faEnvelopeOpen
+		},
 		{
 			title: "+1 (506) 471 6047",
 			link: false,
