@@ -47,7 +47,7 @@ export const about = {
 	buttons: [
 		{
 			title: "Resume",
-			link: "https://docs.google.com/document/d/1d_75xwyj7JG-rQQoZfxwB7BeJGcgulFP5SdsWmPW1hk/edit?usp=sharing",
+			link: "https://docs.google.com/document/d/1FnAy41-x56OKqz_KFTw064dUdeBtVhD9-P5i9HqPSvI/edit?usp=sharing",
 			isPrimary: false,
 		},
 	],
