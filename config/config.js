@@ -92,10 +92,10 @@ export const work = {
 			company: "GMO-Z.com RUNSYSTEM",
 			period: "01/2022 - 12/2022",
 			description: [
-				"Led the design and development of enterprise-level microservice applications such as SmartOCR and SmartKYC, driving over $2 million of revenue every year using the latest technologies.",
+				"Led the design and development of enterprise-level microservice applications such as SmartOCR and SmartKYC, driving over $1 million of revenue every year using the latest technologies.",
 				"Continuous Integration/Deployment Pipeline Integration using Gitlab and Jenkins, Automated testing (unit, load, A/B), deployment, rollback on staging and production environments. Reduced deployment time by 50%.",
 				"Reported directly to CTO: providing updates, strategic insights, and innovative solutions on critical technological advancements.",
-				"Optimize the Agile methodologies. Clarifying objectives. Prioritizing tasks based on urgency and importance. Monitoring task planning."
+				"Served as a Scrum Master, Clarifying objectives. Monitoring task planning. Prioritizing tasks based on urgency and importance."
 			]
 		},
 		{
